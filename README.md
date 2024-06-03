@@ -1,8 +1,16 @@
-# React + Vite
+# timeCheck 
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Time check is a simple React based time managemnet web app, to manage employees and projects.
 
-Currently, two official plugins are available:
+The plan is to have a simple easy to use ui.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+timeCheck is direct response to my mother's need for a similar application which she can use to migrate her paper notes to digital ones.
+Originally I looked for a similar app online that was free and was simple to use. Surprisingly I didn't fond one so I decided to make 
+this one. 
+ 
+This project is open source. If you would like to add to it, you know what to do.
+
+I don't normally do much in react or JS for that matter ( mostly worked with PHP for web apps ) but since I'm broadening my horizon I decided React 
+it is for this one. 
+
+
