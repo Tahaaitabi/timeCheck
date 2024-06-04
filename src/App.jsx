@@ -24,7 +24,10 @@ function App() {
   ]);
   return (
     <>
+      <div className="p-2">
       <RouterProvider router={route} />
+      </div>
+      
     </>
   )
 }
