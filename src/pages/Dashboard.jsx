@@ -1,11 +1,11 @@
 import Nav from "../components/Nav.jsx"
-function Homepage() {
+function Dashboard() {
   return (
     <>
     <Nav /> 
-      <div>Home page</div>
+      <div>Dashboard</div>
     </>
   );
 };
 
-export default Homepage
+export default Dashboard
