@@ -4,7 +4,7 @@ function Login() {
   return (
     <>
       <Nav />
-      <div>Login Page</div>
+      <div className="h-screen w-full">Login Page</div>
     </>
   )
 }

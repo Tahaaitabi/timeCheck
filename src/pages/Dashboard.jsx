@@ -3,7 +3,7 @@ function Dashboard() {
   return (
     <>
     <Nav /> 
-      <div>Dashboard</div>
+      <div className="h-screen w-full">Dashboard</div>
     </>
   );
 };

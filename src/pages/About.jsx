@@ -3,7 +3,7 @@ function About() {
   return (
     <>
       <Nav />
-      <div>About Page</div>
+      <div className="h-screen w-full">About Page</div>
     </>
   )
 }

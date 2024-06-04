@@ -24,7 +24,7 @@ function App() {
   ]);
   return (
     <>
-      <div className="p-2">
+      <div className="p-2 bg-bg-clr">
       <RouterProvider router={route} />
       </div>
       

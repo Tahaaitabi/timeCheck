@@ -3,7 +3,7 @@ function Homepage() {
   return (
     <>
     <Nav /> 
-      <div>Home page</div>
+      <div className="h-screen w-full">Home page</div>
     </>
   );
 };
