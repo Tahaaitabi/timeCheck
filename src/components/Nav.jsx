@@ -1,16 +1,29 @@
 import { Link } from "react-router-dom";
+import { useState } from "react"
 import Logo from "../assets/timeCheck-logo.svg"
 function Nav() {
+  const [ menuToggle, setMenuToggle ] = useState(false);
   return (
-    <nav className="flex gap-4 items-center justify-between w-full">
+    <nav className="flex gap-4 items-center justify-between w-full relative">
       {/* logo */}
       <div className="flex gap-2 items-center">
-        <img src={Logo} alt="Logo" />
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#315c2b" className="size-6">
+          <path fillRule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25ZM12.75 6a.75.75 0 0 0-1.5 0v6c0 .414.336.75.75.75h4.5a.75.75 0 0 0 0-1.5h-3.75V6Z" clipRule="evenodd" />
+        </svg>
         <span className="font-bold text-2xl text-txt-clr">timeCheck</span>
       </div>
-      {/*  Navigation Menu */}
+      {/* Hamburger icon / menuToggle */}
       <div className="flex gap-2 items-center">
-        <ul className="flex gap-4 items-center">
+        <button onClick={ () => setMenuToggle(!menuToggle) }>
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="size-6">
+            <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+          </svg>
+        </button>
+      </div>
+      {/*  Navigation Menu */}
+      { menuToggle == !setMenuToggle && (
+      <div className="flex gap-2 items-center">
+        <ul className="grid gap-4 center">
           <li className="flex gap-2 items-center">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="size-6">
               <path strokeLinecap="round" strokeLinejoin="round" d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
@@ -37,6 +50,7 @@ function Nav() {
           </li>
         </ul>
       </div>
+      )}
     </nav>
   )
 }
